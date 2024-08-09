@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: 05kheangngichseangjpahibernate2homework
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: tech
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
