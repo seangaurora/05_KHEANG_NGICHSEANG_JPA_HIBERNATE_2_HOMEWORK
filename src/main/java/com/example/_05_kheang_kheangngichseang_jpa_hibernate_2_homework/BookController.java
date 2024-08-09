@@ -15,6 +15,7 @@ public class BookController {
     private final BookRepository bookRepository;
 
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public ResponseEntity<APIResponse<Book>> insertBook(@RequestBody BookRequest book) {
         Book addedBook = bookRepository.insertBook(book);
         return ResponseEntity.ok(new APIResponse<>(
